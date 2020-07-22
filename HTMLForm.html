@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>HTML Form</title>
+</head>
+<body>
+    <h1 align="center">Create Account</h1>
+    <hr>
+    <form method="post" align="center">
+        <p><label for ="name">Name</label>
+        <input type="text" name="name"></p>
+
+        <p><label for ="password">Password</label>
+        <input type="password" name="password" ></p>
+
+        <input type="hidden" value="FA007" name="studentid">
+        <p>Gender<br>
+            <input type="radio" name="gender" value="M">Male<br>
+            <input type="radio" name="gender" value="F">Female<br>
+        </p>
+        <hr>
+        <p>Classes Taken</p>
+        <input type="checkbox" checked name="course1" value="cse301">CSE301 - Web<br>
+        <input type="checkbox" name="course2" value="cse307">CSE307 - Data Comm<br>
+        <input type="checkbox" name="course3" value="cse309">CSE309 - OS<br>
+
+
+        <hr>
+        <p><label for="select">Which Section:
+            <select name="section">
+                <option value="0">-- Please Select --</option>
+                <option value="DA">DA</option>
+                <option value="DB">DB</option>
+                <option value="DC">DC</option>
+            </select>
+        </p>
+        <p>
+        <label for="why">Why do you want to take this course?<br>
+        <textarea rows="10" cols="30" name="why">I love web sites 
+        </textarea>
+        <hr>
+        Attach your CV
+        <input type="file" name="file-name">
+        <input type="submit" value="Register" />
+        <input type="reset" value="Fill Again" />
+</form>
+</body>
+</html>
